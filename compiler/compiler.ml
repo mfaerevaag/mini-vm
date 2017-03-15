@@ -18,7 +18,7 @@ let usage () =
   print_endline "Usage : ocaml str.cma compiler.ml <asm file> <output file>"
 
 let error line msg =
-  Printf.printf "[Errror] Line %d : %s\n    %s\n" line.num msg line.content;
+  Printf.printf "[Error] Line %d : %s\n    %s\n" line.num msg line.content;
   exit 1
 
 let opcode_to_int = function
